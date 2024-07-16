@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horeseriding.com</title>
+    <style>
+
+        .container{
+            font-size: 1.2em;
+            background :linear-gradient(to bottom, #DFF5FF,#67C6E3,#378CE7);
+        
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px;
+            border-radius: 20px;
+
+        }
+
+        h1{
+            color:#D20062;
+            text-align: center;
+            text-size-adjust: large;
+        }
+
+        h2{
+            border: 3px solid #49108B ;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+            max-width: 100%;
+            text-align: center;
+            color:#49108B;
+            padding: 20px 30px;
+        }
+
+        img{
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 12px;
+            width: 400px;
+
+        }
+        p{ 
+            color: #49108B;
+            line-height: 25px;
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: medium;
+            font-weight: medium;
+        }
+
+        a{ 
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            color: #D20062;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #D20062;
+            cursor: pointer;
+            transition: All 200ms ease-in-out;
+        }
+        
+        button{
+            display: block;
+            margin: 60px auto;
+            padding: 30px 60px ;
+            border-radius: 10px;
+            background-color: #D20062;
+            color: #C4E4FF;
+            font-size: 30px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+        }
+        
+        button:hover{
+            color: #D20062;
+            background-color: #C4E4FF;
+        }
+        span{
+            color: #D20062;
+        }
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+    <h1>Horse Riding</h1>
+    <div class="sub">
+        <h2> 🐎 Join us this <span>weekend</span></h2>
+    </div>
+   <img src="https://www.beachrides.co.za/media/home/Come-Ride-With-Us.jpg" width="600">
+   <hr>
+    <p>
+    Imagine the exhilaration of riding a majestic horse along the edge of the ocean, feeling the rhythm of hooves on soft sand and the sea breeze caressing your face. <br>
+    Picture yourself amidst laughter and shared moments with friends, surrounded by the natural beauty of sunlit waves and expansive skies.<br>
+    Horse riding at the beach isn't just an activity; it's an experience of freedom, connection, and joy. Whether you're seeking adventure or simply a peaceful escape, <br>
+    come join us for a ride that promises unforgettable memories and a chance to rediscover the thrill of being in harmony with nature.
+    </p>
+    
+    <a href="https://cha.horse/the-top-15-benefits-of-horseback-riding/"><strong> Benefits of horse riding</strong></a>
+    <button>Book your spot now </button>
+
+
+    </div>
+
+
+    <script>
+        function bookButton(){
+            let name = prompt("What is your name ? ")
+            let number = prompt("What is your phone number? ")
+            
+            if (number.length){
+                alert(" Thank you " + name +"! we will be in touch by phone number, Meanwhile have a look at why riding is good for you! ")
+            } else {
+                alert('No number input, we cannot book you at the moment')
+            }
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", bookButton)
+    </script>
+</body>
+</html>
